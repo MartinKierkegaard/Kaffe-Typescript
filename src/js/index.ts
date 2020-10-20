@@ -20,10 +20,10 @@ coffeeMenuList.forEach(coffee => {
 //helper method to print out an object that extends the class "Coffee" to the console
 function printOut(k : Coffee) :void
 {
-    console.log(`Kaffedrik: ${k.CoffeeDrink()}`);
-    console.log(`Rabat: ${k.Discount}`);
-    console.log( `Styrke: ${k.Strength()}`);
-    console.log(`Pris: ${k.Price()}`);   
+    console.log(`Coffee drink: ${k.CoffeeDrink()}`);
+    console.log(`Discount: ${k.Discount}`);
+    console.log( `Strength: ${k.Strength()}`);
+    console.log(`Price: ${k.Price()}`);   
     console.log('__________________'); 
 }
 
@@ -34,7 +34,7 @@ let element: HTMLDivElement = <HTMLDivElement> document.getElementById("coffeeme
 //for each element in the list (in a fast and dirty way using the innerHTML property)
 //Hvert h1 tag indeholder kaffedrik samt dens pris
 coffeeMenuList.forEach(coffee => {
-element.innerHTML += `<h4>${coffee.CoffeeDrink()}, pris: ${coffee.Price()}kr. </h4>`;
+element.innerHTML += `<h4>${coffee.CoffeeDrink()}, price: ${coffee.Price()}kr. </h4>`;
 });
 
 //add a click eventlister to the button for blackcoffee
